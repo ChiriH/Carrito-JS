@@ -1,4 +1,4 @@
-#Carrito JS - DPS
+# Carrito JS - DPS
 
 - William Alberto García Gómez - GG212522
 - Marco Rodrigo Funes Bonilla - FB200456
