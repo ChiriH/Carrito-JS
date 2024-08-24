@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+   <script src="js/productos.js"></script>
+   <script src="js/carrito.js" defer></script>
+   <script src="js/cart.js" defer></script>
+ 
+   <link rel="stylesheet" href="css/index.css">
+   <link rel="stylesheet" href="css/carrito.css">
+   <link rel="stylesheet" href="css/nav.css">
+   <title>Tienda | Carrito</title>
+</head>
+
+<body>
+   <header>
+      <a href="index.html" class="logo"><i class="ri-home-line"></i><span>TIENDA</span></a>
+
+
+      <div class="main">
+         <ul class="navbar">
+            <li><a href="index.html" class="active">Inicio</a></li>
+            <li><a href="#">Carrito</a></li>
+         </ul>
+         <div class="bx bx-menu" id="menu-icon"></div>
+      </div>
+   </header>
+   <main>
+      <section class="carrito-section">
+         <h1 id="productos-header" style="display: none;">Tus productos</h1>
+         <div id="carrito-vacio">
+            <h1>No hay productos en el carrito</h1>
+            <a href="./index.html"  class="carrito-btn">Seguir comprando</a>
+         </div>
+
+         <article id="cart-container">
+
+
+         </article>
+         <article id="totales">
+            <p>Total unidades: <span id="cantidad">0</span></p>
+            <p>Total precio: $<span id="precio">0</span></p>
+            <button id="comprar">Comprar</button>
+            <button id="limpiar">Eliminar todo</button>
+         </article>
+      </section>
+   </main>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+:root{
+    /* Main colores */
+ 
+        --bg-color: #222327;
+        --card-color: #171F26;
+        --bg3-color:  #0C151D;
+        --text-color: #fff;
+        --main-color: #0d74ce;
+ 
+    /* NAV colores */
+	--nav-bg-color: #222327;
+    --nav-card-color: #171F26;
+    --nav-bg3-color:  #0C151D;
+	--nav-text-color: #fff;
+	--nav-main-color: #0d74ce;
+
+    /* BOTONES */
+    --btn-limpiar: rgb(219, 1, 1);
+    --btn-comprar: rgb(2, 182, 2);
+}

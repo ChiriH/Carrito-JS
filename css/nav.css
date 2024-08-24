@@ -1,0 +1,84 @@
+@import url('variables.css');
+ 
+
+
+header{
+	background-color:  var(--bg-color);
+	position: fixed;
+	width: 100%;
+	top: 0;
+	right: 0;
+	z-index: 1000;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+ 
+	padding: 15px 12%;
+	transition: all .50s ease;
+}
+header nav img{
+    height: 25px;
+  }
+.logo{
+	display: flex;
+	align-items: center;
+}
+.logo i{
+	color:	var(--nav-main-color);
+	font-size: 28px;
+	margin-right: 3px;
+}
+.logo span{
+	color: var(--nav-text-color);
+	font-size: 1.7rem;
+	font-weight: 600;
+}
+.navbar{
+	display: flex;
+}
+.navbar a{
+	color: var(--nav-text-color);
+	font-size: 1.1rem;
+	font-weight: 500;
+	padding: 5px 0;
+	margin: 0px 30px;
+	transition: all .50s ease;
+}
+.navbar a:hover{
+	color: var(--nav-main-color);
+}
+.navbar a.active{
+	color: var(--nav-main-color);
+}
+.main{
+	display: flex;
+	align-items: center;	
+}
+.main a{
+	margin-right: 25px;
+	margin-left: 10px;
+	color: var(--text-color);
+	font-size: 1.1rem;
+	font-weight: 500;
+	transition: all .50s ease;
+}
+.user{
+	display: flex;
+	align-items: center;
+}
+.user i{
+	color: var(--nav-main-color);
+	font-size: 28px;
+	margin-right: 7px;
+}
+
+.main a:hover{
+	color: var(--nav-main-color);
+}
+#menu-icon{
+	font-size: 35px;
+	color: var(--nav-text-color);
+	cursor: pointer;
+	z-index: 10001;
+	display: none;
+}
