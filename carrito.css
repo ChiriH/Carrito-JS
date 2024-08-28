@@ -1,0 +1,238 @@
+@import url('variables.css');
+ 
+*{	
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+	text-decoration: none;
+	list-style: none;
+}
+
+/* CARRITO */
+#cart-container{
+    text-align: center;
+	width: 100%;
+	text-align: center;
+	padding-top:  100px;
+    margin-bottom: 80px;
+}
+.carrito-section h1{
+    margin-top: 5%;
+    padding-top: 35px;
+
+}
+.carrito-section{   
+    height: 100%;
+} 
+
+.carrito-card{
+    background-color: var(--bg-color);
+    width: 600px;
+    padding: 20px;
+    margin: 0px auto;
+    max-width: 90%;
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+
+}
+
+.carrito-card img {
+    height: 13rem;
+    width: 13rem;
+    object-fit: cover;
+    border-radius: 0.5rem;
+ 
+}
+
+.carrito-info-text {
+ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.carrito-info-text h4 {
+ 
+    color: var(--text-color);
+}
+
+.carrito-info-text p {
+    font-size: 1.2rem;
+    color: var(--text-color);
+ 
+}
+
+.carrito-add {
+ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.carrito-add button {
+    background-color: #171F26;
+    color: var(--text-color);
+    border: 2px solid #0d74ce;
+    padding: 0.2rem 0.6rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.carrito-add button:hover {
+    background-color: #0d74ce;
+}
+
+.carrito-add .cantidad {
+    
+    font-weight: bold;
+    color: var(--text-color);
+}
+ 
+
+.carrito-btn {
+    display: inline-block;
+    color: var(--text-color);
+    margin-top: 25px;
+    padding: 0.8rem .8rem;
+    border-radius: 0.25rem;
+    display: inline-block;
+    background-color: var(--card-color);
+    cursor: pointer;
+    transition: all .50s ease; 
+ 
+}
+
+.carrito-btn:hover {
+    background-color: var( --main-color);
+}
+.carrito-section{
+    text-align: center;
+ 
+}
+#totales button{
+
+    color: var(--text-color);
+    margin-top: 10px;
+  
+    padding: 0.4rem .4rem;
+    border-radius: 0.25rem;
+
+    cursor: pointer;
+    transition: all .50s ease; 
+}
+#totales #limpiar{
+    background-color: var(--btn-limpiar);
+    border: 2px solid var(--btn-limpiar);
+}
+#totales #comprar{
+    background-color: var(--btn-comprar);
+    border: 2px solid var(--btn-comprar);
+}
+#totales #limpiar:hover{
+    background-color: var(--bg-color);
+    border-color: var(--bg-color);
+ 
+}
+#totales #comprar:hover{
+    background-color: var(--bg-color);
+    border-color: var(--bg-color);
+}
+ 
+#carrito-vacio {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px;
+    text-align: center;
+}
+
+
+/* Estilos para centrar el formulario de pago */
+#payment-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px); /* Ajusta la altura para centrar verticalmente, similar al contenedor del carrito */
+    padding: 20px; /* Añade un padding para mejor apariencia en dispositivos más pequeños */
+}
+
+#payment-form-container .container {
+    max-width: 500px; /* Ajusta el ancho máximo del formulario */
+    background-color: var(--bg-color); /* Fondo para el formulario */
+    padding: 20px;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+    color: #ffffff; /* Color de texto blanco para la información de pago */
+    text-align: center; /* Centrar el texto */
+}
+
+#payment-form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff; /* Color de texto blanco */
+}
+
+#payment-form-container .form-control {
+    margin-bottom: 15px; /* Espacio entre campos */
+    background-color: #1e1e1e; /* Fondo oscuro para los campos de texto */
+    color: #ffffff; /* Texto blanco dentro de los campos de texto */
+    border: 1px solid #4b4b4b; /* Borde gris para los campos */
+    -webkit-appearance: none; /* Eliminar controles predeterminados de los navegadores WebKit */
+    -moz-appearance: textfield; /* Eliminar controles en Firefox */
+}
+
+#payment-form-container .form-control::placeholder {
+    color: #b0b0b0; /* Color del texto del placeholder */
+}
+
+/* Estilos para los selectores */
+#payment-form-container .form-select {
+    background-color: #1e1e1e; /* Fondo oscuro para el selector */
+    color: #ffffff; /* Texto blanco */
+    border: 1px solid #4b4b4b; /* Borde gris */
+    padding: 8px; /* Añadir padding para mejorar la apariencia */
+    border-radius: 0.5rem; /* Bordes redondeados para una apariencia consistente */
+    box-shadow: none; /* Eliminar sombra */
+    -webkit-appearance: none; /* Eliminar estilos predeterminados en navegadores WebKit */
+    -moz-appearance: none; /* Eliminar estilos predeterminados en Firefox */
+    appearance: none; /* Eliminar estilos predeterminados */
+    margin-bottom: 15px; /* Espacio inferior para separación visual */
+}
+
+/* Estilo mejorado del botón */
+#payment-form-container .btn {
+    width: 50%; /* Botón que ocupa el 50% del ancho del formulario */
+    height: 50px; /* Incrementa la altura del botón */
+    background-color: #007bff; /* Azul más bonito */
+    color: #ffffff; /* Letras blancas */
+    border: none; /* Sin borde */
+    border-radius: 25px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 123, 255, 0.3); /* Sombra para darle un efecto de elevación */
+    background-image: linear-gradient(to right, #0069d9, #007bff); /* Gradiente para darle un efecto 3D */
+    transition: all 0.3s ease; /* Transición para un efecto suave */
+    margin-top: 20px; /* Añade un margen superior para separar del campo anterior */
+    font-weight: bold; /* Texto más grueso */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+}
+
+#payment-form-container .btn:hover {
+    background-color: #0056b3; /* Un azul más oscuro al pasar el ratón */
+    box-shadow: 0 6px 8px rgba(0, 86, 179, 0.5); /* Aumenta la sombra al pasar el ratón para un efecto de profundidad */
+    transform: translateY(-2px); /* Eleva el botón ligeramente al pasar el ratón */
+}
+
+
+
+ 
