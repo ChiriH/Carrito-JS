@@ -148,10 +148,6 @@
     border-color: var(--bg-color);
 }
  
- 
-
-
-
 #carrito-vacio {
     
     display: flex;
@@ -161,5 +157,82 @@
     padding: 80px;
     text-align: center;
 }
+
+
+/* Estilos para centrar el formulario de pago */
+#payment-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px); /* Ajusta la altura para centrar verticalmente, similar al contenedor del carrito */
+    padding: 20px; /* Añade un padding para mejor apariencia en dispositivos más pequeños */
+}
+
+#payment-form-container .container {
+    max-width: 500px; /* Ajusta el ancho máximo del formulario */
+    background-color: var(--bg-color); /* Fondo para el formulario */
+    padding: 20px;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+    color: #ffffff; /* Color de texto blanco para la información de pago */
+    text-align: center; /* Centrar el texto */
+}
+
+#payment-form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff; /* Color de texto blanco */
+}
+
+#payment-form-container .form-control {
+    margin-bottom: 15px; /* Espacio entre campos */
+    background-color: #1e1e1e; /* Fondo oscuro para los campos de texto */
+    color: #ffffff; /* Texto blanco dentro de los campos de texto */
+    border: 1px solid #4b4b4b; /* Borde gris para los campos */
+    -webkit-appearance: none; /* Eliminar controles predeterminados de los navegadores WebKit */
+    -moz-appearance: textfield; /* Eliminar controles en Firefox */
+}
+
+#payment-form-container .form-control::placeholder {
+    color: #b0b0b0; /* Color del texto del placeholder */
+}
+
+/* Estilos para los selectores */
+#payment-form-container .form-select {
+    background-color: #1e1e1e; /* Fondo oscuro para el selector */
+    color: #ffffff; /* Texto blanco */
+    border: 1px solid #4b4b4b; /* Borde gris */
+    padding: 8px; /* Añadir padding para mejorar la apariencia */
+    border-radius: 0.5rem; /* Bordes redondeados para una apariencia consistente */
+    box-shadow: none; /* Eliminar sombra */
+    -webkit-appearance: none; /* Eliminar estilos predeterminados en navegadores WebKit */
+    -moz-appearance: none; /* Eliminar estilos predeterminados en Firefox */
+    appearance: none; /* Eliminar estilos predeterminados */
+    margin-bottom: 15px; /* Espacio inferior para separación visual */
+}
+
+/* Estilo mejorado del botón */
+#payment-form-container .btn {
+    width: 50%; /* Botón que ocupa el 50% del ancho del formulario */
+    height: 50px; /* Incrementa la altura del botón */
+    background-color: #007bff; /* Azul más bonito */
+    color: #ffffff; /* Letras blancas */
+    border: none; /* Sin borde */
+    border-radius: 25px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 123, 255, 0.3); /* Sombra para darle un efecto de elevación */
+    background-image: linear-gradient(to right, #0069d9, #007bff); /* Gradiente para darle un efecto 3D */
+    transition: all 0.3s ease; /* Transición para un efecto suave */
+    margin-top: 20px; /* Añade un margen superior para separar del campo anterior */
+    font-weight: bold; /* Texto más grueso */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+}
+
+#payment-form-container .btn:hover {
+    background-color: #0056b3; /* Un azul más oscuro al pasar el ratón */
+    box-shadow: 0 6px 8px rgba(0, 86, 179, 0.5); /* Aumenta la sombra al pasar el ratón para un efecto de profundidad */
+    transform: translateY(-2px); /* Eleva el botón ligeramente al pasar el ratón */
+}
+
+
 
  
