@@ -1,9 +1,10 @@
+// Array de objetos que representa los productos disponibles en la tienda
 const products = [
     {
-        id:1,
-        nombre: "Lentes",
-        precio: 10,
-        cantidadDisponible: 5,
+        id:1, // Identificador único del producto
+        nombre: "Lentes", // Nombre del producto
+        precio: 10, // Precio del producto  
+        cantidadDisponible: 5, // Cantidad de unidades disponibles 
       },
       {
         id:2,
